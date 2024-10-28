@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playwrite GB S', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, yellow , purple);
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+
+}
+
+header h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.toggle{
+    width: 150px;
+    height: 60px;
+    background-color: #303030;
+    margin: 2rem 0;
+    border-radius: 50px;
+    margin-left: 1rem;
+    border: 5px solid #303030;
+    position: relative;
+    left: 45%;
+}
+
+.mover{
+    height: 100%;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+   position:absolute;
+   left: 0;
+   transition:0.5s ease-out;
+}
+
+.sun{
+    position: absolute;
+    left: 1px;
+    font-size: 3rem;
+    padding: 0;
+    border-radius: 50%;
+    height: 100%;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    /* z-index: -100; */
+}
+
+.moon{
+    position: absolute;
+    right: 0px;
+    font-size: 3rem;
+    padding: 0;
+    border-radius: 50%;
+    height: 100%;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    /* z-index: -100; */
+}
+
+.message-box{
+    width: 100%;
+    height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+    /* background-color: red; */
+    color: white;
+}
+
+.message-box h1{
+    font-size: 3.5em;
+}
+
