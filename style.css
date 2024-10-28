@@ -5,10 +5,30 @@
     font-family: 'Playwrite GB S', serif;
 }
 
+body{
+ 
+}
+
 .container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top, yellow , purple);
+/*    
+    background-image: url("https://wallpaperaccess.com/full/3265131.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; */
+}
+
+.dark{
+    width: 100%;
+    height: 100vh;
+   
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.LH4Ra2-VV0XTTcVq6xZU8wHaEK&pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
 header{
@@ -20,47 +40,49 @@ header{
 header h1{
     text-align: center;
     font-size: 3rem;
-    color: white;
+    /* color: white; */
 }
 
 .toggle{
     width: 150px;
-    height: 60px;
-    background-color: #303030;
+    height: 70px;
+    background-color: #232323;
     margin: 2rem 0;
     border-radius: 50px;
     margin-left: 1rem;
-    border: 5px solid #303030;
+    border: 5px solid #232323;
     position: relative;
     left: 45%;
 }
 
 .mover{
     height: 100%;
-    width: 50px;
+    width: 60px;
     border-radius: 50%;
     background-color: #fff;
    position:absolute;
-   left: 0;
+   left: 0px;
    transition:0.5s ease-out;
 }
 
 .sun{
     position: absolute;
-    left: 1px;
+    left: 4px;
+    top: 2px;
     font-size: 3rem;
     padding: 0;
     border-radius: 50%;
     height: 100%;
     width: 50px;
     border-radius: 50%;
-    background-color: orange;
+    /* background-color: orange; */
     /* z-index: -100; */
 }
 
 .moon{
     position: absolute;
-    right: 0px;
+    right: 1px;
+    /* top: 1 */
     font-size: 3rem;
     padding: 0;
     border-radius: 50%;
@@ -78,7 +100,7 @@ header h1{
   align-items: flex-start;
   justify-content: center;
     /* background-color: red; */
-    color: white;
+    /* color: white; */
 }
 
 .message-box h1{

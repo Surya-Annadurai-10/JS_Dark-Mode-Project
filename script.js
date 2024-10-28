@@ -1,15 +1,19 @@
 let mover = document.querySelectorAll(".mover");
 let container = document.querySelector(".container");
 let message = document.querySelector(".message");
-
-mover.forEach((value) =>{
-    value.addEventListener("click" , (event)=>{
-        console.log("hi")
-        if (value.style.left == 0){
-          value.style.left =  `90px`
-        }else if(value.style.left == `90px`){
-          value.style.left = 0;
-        }
-      })
-})
-
+let header = document.querySelector(".header");
+mover.forEach((value) => {
+  value.addEventListener("click", (event) => {
+    if (value.style.left == "0px") {
+      value.style.left = "90px";
+      header.style.color = "#fff";
+      message.style.color = "#fff";
+      container.style.backgroundColor = "#000";
+    }else {
+      value.style.left = "0px";
+      header.style.color = "#000";
+      container.style.backgroundColor = "#fff";
+      message.style.color = "#000";
+    }
+  });
+});
